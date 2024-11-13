@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import { Link } from 'react-router-dom';
 import Pageheader from "../../layouts/Component/PageHeader/PageHeader";
 import {
   Button,
@@ -139,10 +140,10 @@ classNamePrefix="react-select" />
                   <div className="d-flex">
                     <ul className="d-flex settings-li justify-content-center flex-wrap">
                       <li>
-                        <a href="" >Roles</a>
-                      </li>
+                      <Link to={`${import.meta.env.BASE_URL}Users/Roles`}  className={`header-link`}>Roles</Link>
+                                     </li>
                       <li>
-                        <a href="">Users</a>
+                      <Link to={`${import.meta.env.BASE_URL}Users/List`}  className={`header-link`}>Users</Link>
                       </li>
                       <li>
                         <a href="">User Groups</a>
