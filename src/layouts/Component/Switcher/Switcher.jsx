@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { ThemeChanger } from "../../../common/redux/Action";
 import Themeprimarycolor, * as switcherdata from "../../../common/Switcherdata";
 import { useEffect } from 'react';
+import ALLImages from "../../../common/ImageData";
 
 
 const Switcher = ({ local_varaiable, ThemeChanger }) => {
@@ -66,11 +67,52 @@ const Switcher = ({ local_varaiable, ThemeChanger }) => {
                 >
                 </html>
             </Helmet>
+            
+            
             <div className="switcher-backdrop d-none" onClick={() => { Switcherclose(); }}></div>
             <div className="offcanvas offcanvas-end" tabIndex={-1} id="switcher-canvas" aria-labelledby="offcanvasRightLabel">
-                <div className="offcanvas-header border-bottom">
-                    <h5 className="offcanvas-title text-default" id="offcanvasRightLabel">Switcher</h5>
-                    <Button variant='' onClick={() => { Switcherclose(); }} type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></Button>
+                <div className="offcanvas-header pb-2 d-block border-bottom bg-light">
+                <div className="d-flex gap-3 align-items-center">
+            <div>
+              <img
+                className="avatar rounded-pill avatar-xl cover-image"
+                src={ALLImages("user4")}
+              />
+            </div>
+            <div>
+              <h6
+                className="offcanvas-title text-default"
+                id="offcanvasRightLabel"
+              >
+                Muthiah
+              </h6>
+              <p className="text-mute fs-12 mb-0">muthiah@insightz.tech</p>
+              <div className="d-flex gap-1">
+                <Link className="text-mute fs-12 mb-0">My Account</Link>
+                <Link className="text-mute fs-12 mb-0">| Personalize</Link>
+              </div>
+            </div>
+          </div>
+          <div className="d-flex pt-3 align-items-center gap-3 justify-content-between">
+            <div className="">
+            <Button variant='blue-light' className="btn-icon me-1 rounded-pill"><i className="fa fa-apple"></i></Button>
+            <Button variant='blue-light' className="btn-icon rounded-pill"><i className="fa fa-android"></i></Button>
+            </div>
+            <div>
+            <Button variant='primary-light' className="rounded-pill">Sign Out</Button>
+                </div>
+          </div>
+          <Button
+            variant=""
+            onClick={() => {
+              Switcherclose();
+            }}
+            type="button"
+            className="btn-close position-absolute top-0 mt-2 me-2"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></Button>
+
                 </div>
                 <div className="offcanvas-body">
                     <Tab.Container defaultActiveKey={1}>
