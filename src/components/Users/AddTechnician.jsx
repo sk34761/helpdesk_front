@@ -479,7 +479,7 @@ const AddTechnician = () => {
           </p>
           <p className="text-muted">
             To group technicians under this Group, select the technicians from
-            the Available Technicians list box and click Assign (>>) button. For
+            the Available Technicians list box and click Assign button. For
             multiple select of technicians, use Ctrl or Shift key.
           </p>
           <p className="text-muted">
