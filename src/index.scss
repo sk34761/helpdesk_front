@@ -1,0 +1,213 @@
+@use "./assets/scss/variables";
+
+@use 'swiper/css';
+@use 'swiper/css/pagination';
+@use 'swiper/css/navigation';
+@use 'swiper/css/effect-coverflow';
+@use 'swiper/css/thumbs';
+@use 'swiper/css/effect-flip';
+@use 'swiper/css/effect-fade';
+@use 'swiper/css/effect-cube';
+@use 'swiper/css/scrollbar';
+@use 'swiper/css/free-mode';
+
+@import '../src/assets/css/bootstrap.css';
+
+//yet image librery
+@import "yet-another-react-lightbox/styles.css";
+@import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+
+//file pond
+
+@import 'filepond/dist/filepond.min.css';
+@import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+
+
+//react date picker
+
+@import "react-datepicker/dist/react-datepicker-cssmodules.css";
+@import "react-datepicker/dist/react-datepicker.css";
+
+//react-sun editor
+
+@import 'suneditor/dist/css/suneditor.min.css';
+
+//React range Slider
+
+@import 'react-range-slider-input/dist/style.css';
+
+//Grid-js Table
+
+@import "gridjs/dist/theme/mermaid.css";
+
+//react tabuelater 
+@import "react-tabulator/lib/styles.css"; // default theme
+@import "react-tabulator/css/bootstrap/tabulator_bootstrap.min.css"; // use Theme(s)
+@import "react-tabulator/lib/css/bootstrap/tabulator_bootstrap.min.css";
+
+
+//simple_bar_react
+
+@import 'simplebar-react/dist/simplebar.min.css';
+
+//leaflet
+
+@import 'leaflet/dist/leaflet.css';
+
+//rc-Slider
+
+@import "rc-slider/assets/index.css";
+@import "react-range-slider-input/dist/style.css";
+
+//simonwep colorpicker
+@import "@simonwep/pickr/dist/themes/classic.min.css";
+@import "@simonwep/pickr/dist/themes/monolith.min.css";
+@import "@simonwep/pickr/dist/themes/nano.min.css";
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+//Swipper css
+
+
+//Rodal css
+@import "rodal/lib/rodal.css";
+
+@import "./assets/css/style.css";
+@import "./assets/css/icons.css";
+
+@media (min-width: 1717px) {
+    .app-sidebar .main-menu {
+        margin-inline: 0 !important;
+    }
+}
+tr.user_row td {
+    background-color: #000;
+}
+.role-card:hover{
+    background-color: #E1F0FF;
+}
+.sidenav{
+    min-height: 90vh;
+    // background-color: #F5F5F5 !important;
+    background: var(--gray-2) !important;
+    height: 100%;
+    max-height: 100vh;
+    position: sticky;
+}
+.sidenav .accordion-button:not(.collapsed){
+    background: var(--gray-2) !important;
+    color: var(--gray-10);
+    border-radius: 0;
+    font-weight: 600;
+}
+.accordion-item:last-of-type .accordion-button.collapsed{
+    background: var(--gray-2) !important;
+}
+
+.sidenav .nav-item a {
+    padding: 10px 20px;
+}
+.sidenav .nav-item a.active{
+    background-color: #E1F0FF;
+    border-left: 5px solid var(--primary-color);
+}
+.accordion-button.collapsed {
+    box-shadow: none;
+    color: var(--default-text-color);
+    background: transparent;
+}
+.sidenav .accordion-button:not(.collapsed)::after {
+    transform:rotate(0deg);
+}
+.accordion-button::after {
+    background-image: none;
+    content: "\e92d";
+    font-family: feather !important;
+    transform:rotate(-90deg);
+}
+.form-check-input{
+    border: 1px solid #ccc;
+}
+[data-theme-mode=dark] .sidenav .nav-item a.active{
+    background-color: #0d0d0e;
+    border-left: 5px solid var(--primary-color);
+}
+[data-theme-mode=dark] .sidenav .accordion-button:not(.collapsed){
+    background: #1a1c1e !important;
+    color: var(--gray-10);
+}
+[data-theme-mode=dark] .sidenav{
+    min-height: 90vh;
+    // background-color: #F5F5F5 !important;
+    background: #1a1a1a !important;
+    height: 100%;
+    max-height: 100vh;
+    position: sticky;
+}
+[data-theme-mode=dark] .sidenav .accordion-item:last-of-type .accordion-button.collapsed{
+    background: #1a1a1a !important;
+}
+[data-theme-mode=dark] .bg-gray-300 {
+    background-color:  #282a2c;
+}
+[data-theme-mode=dark] .role-card:hover{
+    background-color: #282a2c;
+}
+.react-select__control{
+    border-top-width: 0px !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-radius: 0px !important;
+}
+.react-select__indicator-separator{
+    display: none !important;
+}
+.react-select__dropdown-indicator{
+    display: none !important;
+}
+.sreach-box{
+    position: relative;
+}
+.sreach-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+}
+.styled__control-is-focused{
+    border-width: 0px !important;
+    border-color : transparent !important;
+
+}
+.react-select__control:hover{
+    border-width: 0px !important;
+    box-shadow : none !important;
+    border-color : transparent !important;
+}
+[data-theme-mode=dark] .sidenav .nav-item a.active{
+    background-color: #0d0d0e;
+    border-left: 5px solid var(--primary-color);
+}
+[data-theme-mode=dark] .bg-td-gray{
+    background-color: #252728 !important;
+  }
+  [data-theme-mode=dark] .bg-gray-200 {
+    background-color:  #282a2c;
+}
+.settings-li li{
+    padding: 0px 5px;
+    border-right: 1px solid #ccc;
+    line-height: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.settings-li li:last-child{
+    border-right: 0px solid #ccc;
+}
+.settings-li li a{
+    color: var(--charcoal-blue);
+}
+.settings-li li a:hover{
+    color: var(--primary-color);
+}
