@@ -1,0 +1,83 @@
+@use "./assets/scss/variables";
+
+@use 'swiper/css';
+@use 'swiper/css/pagination';
+@use 'swiper/css/navigation';
+@use 'swiper/css/effect-coverflow';
+@use 'swiper/css/thumbs';
+@use 'swiper/css/effect-flip';
+@use 'swiper/css/effect-fade';
+@use 'swiper/css/effect-cube';
+@use 'swiper/css/scrollbar';
+@use 'swiper/css/free-mode';
+
+@import '../src/assets/css/bootstrap.css';
+
+//yet image librery
+@import "yet-another-react-lightbox/styles.css";
+@import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+
+//file pond
+
+@import 'filepond/dist/filepond.min.css';
+@import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+
+
+//react date picker
+
+@import "react-datepicker/dist/react-datepicker-cssmodules.css";
+@import "react-datepicker/dist/react-datepicker.css";
+
+//react-sun editor
+
+@import 'suneditor/dist/css/suneditor.min.css';
+
+//React range Slider
+
+@import 'react-range-slider-input/dist/style.css';
+
+//Grid-js Table
+
+@import "gridjs/dist/theme/mermaid.css";
+
+//react tabuelater 
+@import "react-tabulator/lib/styles.css"; // default theme
+@import "react-tabulator/css/bootstrap/tabulator_bootstrap.min.css"; // use Theme(s)
+@import "react-tabulator/lib/css/bootstrap/tabulator_bootstrap.min.css";
+
+
+//simple_bar_react
+
+@import 'simplebar-react/dist/simplebar.min.css';
+
+//leaflet
+
+@import 'leaflet/dist/leaflet.css';
+
+//rc-Slider
+
+@import "rc-slider/assets/index.css";
+@import "react-range-slider-input/dist/style.css";
+
+//simonwep colorpicker
+@import "@simonwep/pickr/dist/themes/classic.min.css";
+@import "@simonwep/pickr/dist/themes/monolith.min.css";
+@import "@simonwep/pickr/dist/themes/nano.min.css";
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+//Swipper css
+
+
+//Rodal css
+@import "rodal/lib/rodal.css";
+
+@import "./assets/css/style.css";
+@import "./assets/css/icons.css";
+
+@media (min-width: 1717px) {
+    .app-sidebar .main-menu {
+        margin-inline: 0 !important;
+    }
+}
